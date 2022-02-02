@@ -30,14 +30,15 @@
   <!-- Header to welcome guests with box around it -->
   <body onload="RollSixSidedDice()">
     <div id="header">
-        <h1>Welcome to the Dice Game!</h1>
+        <h1>Test Your Expressions Here</h1>
         </div>
 
         <div class="row">
             <div class="column">
-              <h2>Player 1</h2>
-              <input id="dice" type="text" value="" size="10" disabled><br><br>
-
+              <h2>Expression Input</h2>
+              <form oninput="output.value = testleft.test(testright)">
+              <input id="testleft" type="text"  size="50" height="400">
+              
 
 
 
@@ -45,14 +46,23 @@
             <!-- this has the button that rolls dice and changes text in this column -->
             <div class="column">
               <h2>Instructions</h2>
-              <p>The player who rolls the higher number will win! Click the button to roll both dice and see who wins!</p>
-              <button type="button" autofocus; onclick="RollSixSidedDice(); Winner();">Roll Dice</button><br><br>
+              <p>Type your expression in the left box, and the string to test it against in the right box. Then click the button to test.</p>
+
+              
+                <button type="button"  onclick="testInput(re, str);">Validate</button><br><br>
+              
+                <output name="output" for= "testleft testright"></output>
+              
+
+              
             <!-- button rolls dice, changes text, gets winner, throws confetti -->
             </div>
 
             <div class="column">
-              <h2>Player 2</h2>
-              <input id="dice1" type="text" value="" size="10" disabled><br><br>
+              <h2>Expression Test</h2>
+              
+                <input id="testright" type="text"  size="50" height="400">
+                </form>
 
 
             </div>
