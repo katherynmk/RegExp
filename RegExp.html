@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <title>Dice Game</title>
+
+<!-- Such as how to make a 'topnav' and how to make html cards -->
+<!--
+
+ Author: Katheryn Knutson
+
+ Class:  Software Engineering
+
+ Project: Lab 2 Dice Game
+
+ Description: Plays a dice game
+-->
+
+
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+  
+    <script src="dice.js"></script>
+    <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+  </head> 
+
+<body>
+  <!-- Validated with 2 errors -->
+  <!-- Header to welcome guests with box around it -->
+  <body onload="RollSixSidedDice()">
+    <div id="header">
+        <h1>Welcome to the Dice Game!</h1>
+        </div>
+
+        <div class="row">
+            <div class="column">
+              <h2>Player 1</h2>
+              <input id="dice" type="text" value="" size="10" disabled><br><br>
+
+
+
+
+            </div>
+            <!-- this has the button that rolls dice and changes text in this column -->
+            <div class="column">
+              <h2>Instructions</h2>
+              <p>The player who rolls the higher number will win! Click the button to roll both dice and see who wins!</p>
+              <button type="button" autofocus; onclick="RollSixSidedDice(); Winner();">Roll Dice</button><br><br>
+            <!-- button rolls dice, changes text, gets winner, throws confetti -->
+            </div>
+
+            <div class="column">
+              <h2>Player 2</h2>
+              <input id="dice1" type="text" value="" size="10" disabled><br><br>
+
+
+            </div>
+          </div>
+
+
+
+
+
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'6d5df8067ccf2913',m:'oVwEVHHGzMoFGhjRx8Ga6PrfCkKty3lA8MnS7XEG2Tg-1643579981-0-AUmSyxErRwVxZwr+s8V2SOfnVFzQMQmRC7spLropvKd7qB6NBewdZZiTWpw6BdHzoifscbuytLCppLpd4AeV8CJIfgN2F4IQV/pjA/NcKBYXynHGhchXLBBK+UY2OFN4dwZA+KnejEVyEDH8+U4IDyaSKqyXtm67VUlAGrBkI26CDcrLgFv3CeOVPL1Pg7pY1g==',s:[0x3dc8952380,0x2fd5e975d9],}})();</script></body>
+</html>
+
