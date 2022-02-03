@@ -41,6 +41,13 @@
 #sided {
     font-size: 40px;
 }
+.box{
+  float: center;
+  width: 600px;
+  padding: 10px;
+  border: 5px solid rgb(255, 254, 254);
+  margin: 0;
+}
  /* top of page */
 #header {
     border: 1px solid black;
