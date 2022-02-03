@@ -20,15 +20,14 @@
 <head>
     <link rel="stylesheet" href="styles.css">
   
-    <script src="dice.js"></script>
-    <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <script src="exp.js"></script>
+
   </head> 
 
 <body>
   <!-- Validated with 2 errors -->
   <!-- Header to welcome guests with box around it -->
-  <body onload="RollSixSidedDice()">
+  <body>
     <div id="header">
         <h1>Test Your Expressions Here</h1>
         </div>
@@ -37,8 +36,8 @@
             <div class="column">
               <h2>Expression Input</h2>
               <!-- foo -->
-              <form oninput="output.value = testleft.test(testright)">
-              <input id="testleft" type="text"  size="50" height="400">
+              
+              <input id="testleft" type="text"  size="50" height="400" value = "foo"><br>
               
 
 
@@ -48,11 +47,11 @@
             <div class="column">
               <h2>Instructions</h2>
               <p>Type your expression in the left box, and the string to test it against in the right box. Then click the button to test.</p>
+              <p id= "result"></p>
+                
+                <button type="button"  onclick="testInput();">Validate</button><br><br>
 
-              
-                <button type="button"  onclick="testInput(re, str);">Validate</button><br><br>
-              
-                <output name="output" for= "testleft testright"></output>
+                
               
 
               
@@ -62,8 +61,8 @@
             <div class="column">
               <h2>Expression Test</h2>
               <!-- table football -->
-                <input id="testright" type="text"  size="50" height="400">
-                </form>
+              <input id="testright" type="text"  pattern= "regexp" size="50" height="400" value = "football"><br><br>
+           
 
 
             </div>
@@ -72,7 +71,6 @@
 
 
 
-
-<script type="text/javascript">(function(){window['__CF$cv$params']={r:'6d5df8067ccf2913',m:'oVwEVHHGzMoFGhjRx8Ga6PrfCkKty3lA8MnS7XEG2Tg-1643579981-0-AUmSyxErRwVxZwr+s8V2SOfnVFzQMQmRC7spLropvKd7qB6NBewdZZiTWpw6BdHzoifscbuytLCppLpd4AeV8CJIfgN2F4IQV/pjA/NcKBYXynHGhchXLBBK+UY2OFN4dwZA+KnejEVyEDH8+U4IDyaSKqyXtm67VUlAGrBkI26CDcrLgFv3CeOVPL1Pg7pY1g==',s:[0x3dc8952380,0x2fd5e975d9],}})();</script></body>
-</html>
+</body>
+  </html>
 
