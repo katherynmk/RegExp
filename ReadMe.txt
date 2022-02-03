@@ -11,6 +11,6 @@ launch page from RegExp.html
 
 
 necessary files:
-RegExp.html
+index.html
 styles.css
 RegExp.js
