@@ -28,7 +28,8 @@
 
 
     body{
-      background: url("https://i.ibb.co/FJ6G2tX/code-matrix.gif"); 
+     /* background: url("https://i.ibb.co/FJ6G2tX/code-matrix.gif"); */
+      background-color: #000000;
     }
 
 #button{
